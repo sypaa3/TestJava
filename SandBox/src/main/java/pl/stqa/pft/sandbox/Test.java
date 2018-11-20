@@ -15,8 +15,8 @@ public class Test {
     Rectangle r = new Rectangle(4,6);
     System.out.println("Pole prostokata o bokach " + r.a + " i " + r.b  + " = " + r.area());
 
-    Point p1 = new Point(2.0, 3.5);
-    Point p2 = new Point(8.2, 2.7);
+    Point p1 = new Point(5.0, 6.0);
+    Point p2 = new Point(3.0, 2.0);
 
     System.out.println("Distance between P1 and P2 = " + Point.distance(p1, p2));
     System.out.println("Distance between P1 and P2 = (method using)"+ p1.distance(p2));
