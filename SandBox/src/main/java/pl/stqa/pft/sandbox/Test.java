@@ -1,5 +1,7 @@
 package pl.stqa.pft.sandbox;
 
+import org.w3c.dom.css.Rect;
+
 public class Test {
 
   public static void main(String[] args) {
@@ -7,12 +9,11 @@ public class Test {
     hello("user");
     hello("Maciej");
 
-    double l = 5;
-    double a = 4;
-    double b = 6;
 
-    System.out.println("Pole kwadratu o boku " + l + " = " + area(l));
-    System.out.println("Pole prostokata o bokach " + a + " i " + b  + " = " + area(a,b));
+    Square s = new Square(5);
+    System.out.println("Pole kwadratu o boku " + s.l + " = " + s.area());
+    Rectangle r = new Rectangle(4,6);
+    System.out.println("Pole prostokata o bokach " + r.a + " i " + r.b  + " = " + r.area());
 
     Point p1 = new Point(2.0, 3.5);
     Point p2 = new Point(8.2, 2.7);
@@ -28,13 +29,5 @@ public class Test {
 
   }
 
-  public static double area(double len) {
-    return len * len;
 
-  }
-
-  public static double area(double a, double b){
-    return a * b;
-
-  }
 }
